@@ -1,0 +1,7 @@
+{
+  "name": "Oat",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
