@@ -1,17 +1,89 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>
-      Tab 1
-    </ion-title>
+    <ion-title> แสดงผล </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">Tab 1</ion-title>
+      <ion-title size="large">แสดงผล</ion-title>
     </ion-toolbar>
   </ion-header>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>แปลงที่ 1</ion-card-title>
+    </ion-card-header>
 
-  <app-explore-container name="Tab 1 page"></app-explore-container>
+    <ion-card-content
+      style="display: flex; justify-content: space-between; text-align: center"
+    >
+      <ion-grid>
+        <ion-row>
+          <ion-col>
+            <ngx-gauge
+              [type]="gaugeType"
+              [value]="gaugeValue"
+              [label]="gaugeLabel"
+              [append]="gaugeAppendText"
+              size="150"
+            >
+            </ngx-gauge>
+          </ion-col>
+          <ion-col>
+            <ngx-gauge
+              [type]="gaugeType"
+              [value]="gaugeValue"
+              [label]="gaugeLabel"
+              [append]="gaugeAppendText"
+              size="150"
+            >
+            </ngx-gauge>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col> อุณหภูมิ </ion-col>
+          <ion-col> ความชื้น </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-card-content>
+  </ion-card>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>แปลงที่ 2</ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content
+      style="display: flex; justify-content: space-between; text-align: center"
+    >
+      <ion-grid>
+        <ion-row>
+          <ion-col>
+            <ngx-gauge
+              [type]="gaugeType"
+              [value]="gaugeValue"
+              [label]="gaugeLabel"
+              [append]="gaugeAppendText"
+              size="150"
+            >
+            </ngx-gauge>
+          </ion-col>
+          <ion-col>
+            <ngx-gauge
+              [type]="gaugeType"
+              [value]="gaugeValue"
+              [label]="gaugeLabel"
+              [append]="gaugeAppendText"
+              size="150"
+            >
+            </ngx-gauge>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col> อุณหภูมิ </ion-col>
+          <ion-col> ความชื้น </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-card-content>
+  </ion-card>
 </ion-content>
